@@ -4,7 +4,8 @@
   "description": "A tennis scoring system",
   "main": "src/index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "markdownlint": "^0.34.0",
     "prettier": "3.3.3",
     "ts-jest": "^29.2.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.16.1"
   }
