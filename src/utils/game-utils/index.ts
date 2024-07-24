@@ -1,4 +1,4 @@
-import { Players, Score } from "../common/types";
+import { Players, Score } from "../../common/types";
 
 const MIN_SCORE_FOR_DEUCE = 3;
 const MIN_SCORE_FOR_ADVANTAGE = 3;
@@ -26,7 +26,7 @@ export const checkForTieBreakerGameWin = (
  * Tennis like to make things difficult and label point as weird values
  * There are a lot of different theories why but that is a story for another time...
  */
-const translatePointsToTennisLingo = (points: number): string => {
+export const translatePointsToTennisLingo = (points: number): string => {
   switch (points) {
     case 1:
       return "15";

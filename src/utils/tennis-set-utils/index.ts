@@ -1,9 +1,8 @@
-import { PLAYER_1, PLAYER_2 } from "../common/constants";
-import { Score } from "../common/types";
+import { PLAYER_1, PLAYER_2 } from "../../common/constants";
+import { Score } from "../../common/types";
 
 const MIN_GAMES_TO_WIN_SET = 6;
 const LEAD_BY_NUM_GAMES_TO_WIN_SET = 2;
-const TIE_BREAK_THRESHOLD = 1;
 const MIN_GAMES_TO_WIN_SET_TIE_BREAKER = 7;
 
 /**
@@ -23,8 +22,7 @@ export const hasWonSetDuringTieBreaker = (gamesWon: number): boolean =>
   gamesWon === MIN_GAMES_TO_WIN_SET_TIE_BREAKER;
 
 /**
- * Determine if a score is 6-5 (or 5-6) and if so, indicate the need for a
- * tie breaker game
+ * Determine if a score is 6-6 and if so, indicate the need for a tie breaker game
  */
 export const isTieBreakerRequired = (
   playerSetScore: number,

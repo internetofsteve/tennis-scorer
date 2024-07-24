@@ -1,5 +1,5 @@
-import { PLAYER_1, PLAYER_2 } from "../common/constants";
-import { MatchState, PlayerIndex } from "../common/types";
+import { PLAYER_1, PLAYER_2 } from "../../common/constants";
+import { MatchState, PlayerIndex } from "../../common/types";
 
 export const getPlayerIndex = (
   playerName: string,

@@ -1,4 +1,4 @@
-import { hasWonSet } from "./tennis-set-utils";
+import { hasWonSet } from ".";
 
 describe("Set Utils", () => {
   describe("hasWonSet", () => {

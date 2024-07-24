@@ -1,5 +1,5 @@
-import { PLAYER_1, PLAYER_2 } from "../common/constants";
-import { PlayerIndex, Score } from "../common/types";
+import { PLAYER_1, PLAYER_2 } from "../../common/constants";
+import { PlayerIndex, Score } from "../../common/types";
 
 export const transformToScore = ({
   playerScore,

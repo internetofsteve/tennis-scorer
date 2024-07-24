@@ -1,6 +1,6 @@
-import { PLAYER_1, PLAYER_2 } from "../common/constants";
-import { Score } from "../common/types";
-import { isInitialScore, transformToScore } from "./score-utils";
+import { PLAYER_1, PLAYER_2 } from "../../common/constants";
+import { Score } from "../../common/types";
+import { isInitialScore, transformToScore } from ".";
 
 describe("Score Utils", () => {
   describe("isInitialScore", () => {
