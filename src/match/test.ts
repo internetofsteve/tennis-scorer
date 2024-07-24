@@ -1,7 +1,19 @@
 import { Match } from ".";
 import { pointAccumulator, scorePointsUntilTieBreak } from "./test-utils";
 
-describe("Tennis Match", () => {
+describe("Tennis Match - Integration Tests", () => {
+  it("should throw when a player is invalid", () => {
+    expect(() => {
+      new Match({ player1Name: "", player2Name: "steve" });
+    }).toThrow();
+  });
+
+  it("should throw when players are identical", () => {
+    expect(() => {
+      new Match({ player1Name: "", player2Name: "steve" });
+    }).toThrow();
+  });
+
   it("should return score of 1-0 when first player scores first 4 points", () => {
     const player1Name = "Steve";
     const player2Name = "Pete";
